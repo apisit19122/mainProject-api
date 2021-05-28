@@ -4,6 +4,7 @@ Node.js express - Graphql - Typescript - Mysql[sequelize] - jwt
 
 # Sql Table
 
+```
 CREATE TABLE `users` (
   `id` char(36) NOT NULL,
   `username` varchar(255) NOT NULL,
@@ -17,3 +18,4 @@ CREATE TABLE `users` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
