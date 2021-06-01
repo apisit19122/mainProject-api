@@ -23,7 +23,7 @@ export class UserResolver {
   @Authorized()
   @Query(() => [Users], { nullable: true })
   async allUsers(@Ctx() { users }: MyContext): Promise<Users[] | null> {
-    const userData = await Users.findAll({});
+    const userData = await Users.findAll();
 
     return userData;
   }

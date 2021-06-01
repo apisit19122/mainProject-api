@@ -53,8 +53,6 @@ export class AuthResolver {
     @Arg("password", () => String) password: string
   ): Promise<UserToken | null> {
     try {
-      // console.log(email, password);
-
       const userAccount = await Users.findOne({ where: { username } });
       let userResult = userAccount;
 
